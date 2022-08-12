@@ -1,0 +1,73 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url(./components/media/spooky\ bg1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #501106;
+}
+
+
+.App-header-h1{
+ position: relative;
+ color: #501106;
+ text-transform: uppercase;
+ width: 100%;
+ outline: none;
+ animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,15%,20%,40%,60%,80%,90%,95% {
+      color: black;
+      text-shadow: none;
+  }
+
+  15.2%,20.1%,40.1%,60.1%,80.1%,90.1%,92.1%,100% {
+      color: white;
+      text-shadow: 10 10 10 rgb(230, 186, 168);
+}
+}
+
+.text-box h1 {
+  font-size: 90px;
+  line-height: 160px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(52, 6, 6);
+  background-position: 0 0;
+  animation: animate 5s linear infinite;
+  -webkit-box-reflect: below 2px linear-gradiebnt(transparent, rgb(74, 6, 6));
+}
+
+.text-box h2{
+  font-size: 74px;
+  font-weight: 700;
+  color: black;
+  background-color: aliceblue;
+}
+
